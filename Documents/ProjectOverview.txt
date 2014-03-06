@@ -1,0 +1,39 @@
+--------------------------------
+Project Overview
+--------------------------------
+# Means comment, nothing formal
+# Excuse the minimal document. It is meant to be easily editable in all platforms and rapidly changing.
+
+
+Target User
+
+--------------------------------
+
+Broad Overview:
+People who are behind on their taxes.
+
+Intermediate:
+(Needs fleshed out furthur)
+
+Specific:
+(Needs fleshed out furthur)
+
+#End Target User
+--------------------------------
+
+
+Expected Common User Flows
+
+--------------------------------
+
+Flow1:
+User finds the website via search a related term in a search engine.
+# We can talk about organic vs paid SEO strategies at a later date
+
+User navigates to our website.
+
+
+
+Minimal Marketable Feature (MMF)
+
+--------------------------------
