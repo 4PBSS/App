@@ -19,12 +19,12 @@ Target User
 --------------------------------
 Broad Overview:
  - People who are behind on their taxes.
-
+ - (Needs fleshed out further)
 Intermediate:
- - (Needs fleshed out furthur)
+ - (Needs fleshed out further)
 
 Specific:
- - (Needs fleshed out furthur)
+ - (Needs fleshed out further)
 
 # End Target User
 
