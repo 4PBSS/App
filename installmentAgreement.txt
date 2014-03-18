@@ -1,0 +1,129 @@
+Draft 9-4-2013
+
+IRS Fresh Start Installment Agreement Program
+Input/Output Analysis
+
+	•	Introduction Information to Include on Website
+
+You can avoid unnecessary penalties and interest by paying your taxes in full and on time. This website may allow you [or your authorized representative (Power of Attorney)] to apply for an installment agreement if you cannot pay your taxes in full.
+
+[SSJ:  Should we include a general overview of the requirements to be eligible for the program or not?  (See IRS website summary - http://www.irs.gov/Businesses/Small-Businesses-&-Self-Employed/Fresh-Start-Installment-Agreements).  May not want to so that we can first collect taxpayer info database.  Let’s discuss.] 
+
+	•	Information Utilized But Assumed Already Recorded in Database.
+
+	•	First Name
+	•	Initial
+	•	Last Name
+	•	Social Security Number or Individual Tax ID number
+	•	Date of birth
+	•	Caller ID number, shown at the top of your recent notice
+	•	PIN, if you have one. If not, enter your Adjusted Gross Income (AGI)
+	•	Spouse’s First Name
+	•	Spouse’s Initial 
+	•	Spouse’s Last Name
+	•	Spouse’s Social Security Number or Individual Tax ID number
+	•	Spouse’s date of birth
+	•	Current Mailing Address
+	•	Number and Street, or P.O. Box Information
+	•	Apartment Number
+	•	City or Town
+	•	State
+	•	Zip Code
+	•	“Is the current address provided new since the filing of your last federal income tax return?”
+	•	“Yes” (active bullet)
+	•	“No” (active bullet)
+	•	Home Telephone Number
+	•	“If necessary, what is the best time for the Internal Revenue Service to call you at this number?” 
+	•	format XX:XX a/p to XX:XX a/p
+	•	Name of Employer
+	•	Address of this Employer
+	•	Number and Street
+	•	City of Town
+	•	State
+	•	Zip Code
+	•	Work Telephone Number
+	•	Work Telephone Extension
+	•	“If necessary, what is the best time for the Internal Revenue Service to call you at this number?”
+	•	Name of Bank or Other Financial Institution From Which Payments to the Internal Revenue Service Will be Made
+	•	Address of this bank or other financial institution
+	•	Number and Street
+	•	City or Town
+	•	State
+	•	Zip Code
+	•	“Please provide each year for which you currently owe back tax to the Internal Revenue Service.”
+	•	Please provide the dollar amount of back tax (including interest and penalties) currently owed for each of these tax years.”
+Highest amount you can pay, and when you can pay it
+III.	I/O Prompts.  Prompt 1 – “Are you an individual taxpayer who currently owes back taxes to the Internal Revenue Service?”
+
+	•	“Yes” (active bullet) – continue to prompt two
+	•	“No” (active bullet) – END – “We apologize, but our system cannot process this type of payment plan request at this time.  Please visit [WEBSITE NAME] again soon for additional payment plan options.”  
+
+Prompt 2 – make the following determination based on aggregate data initially recorded in database for particular user. 
+
+	•	If user owes $0.00 to $25,000.00 – seamlessly continue to prompt four
+	•	If user owes $25,001.00 to $50,000.00 – seamlessly continue to prompt three
+	•	If user owes > $50,000.00 – END – “We apologize, but our system cannot process this type of payment plan request at this time.  Please visit [WEBSITE NAME] again soon for additional payment plan options.”
+
+Prompt 3 – “Do you have a bank account from which the Internal Revenue Service can electronically withdraw your agreed upon monthly payment plan payment?”
+
+	•	“Yes” (active bullet) – continue to prompt four 
+	•	“No” (active bullet) – END – “We apologize, but our system cannot process this type of payment plan request at this time.  Please visit [WEBSITE NAME] again soon for additional payment plan options.”
+
+Prompt 4 –  “As of now, have you filed all federal income tax returns that are due?”
+
+	•	“Yes” (active bullet) – continue to prompt five
+	•	“No” (active bullet) – END “You must file all currently unfiled federal income tax returns with the Internal Revenue Service before requesting a payment plan.”
+
+Prompt 5 – “Can you afford to pay the Internal Revenue Service at least $X=[aggregate dollar amount owed initially recorded in database / 72] per month no later than the 28th day of each month?  You will have the opportunity to pay more than this amount on a monthly basis.”
+
+	•	“Yes” (active bullet) – continue to prompt six
+	•	“No” (active bullet) – END – “We apologize, but our system cannot process this type of payment plan request at this time.  Please visit [WEBSITE NAME] again soon for additional payment plan options.”
+
+Prompt 6 – “Would you like to pay the Internal Revenue Service more than the monthly minimum payment of $X?”
+
+	•	“Yes” (active bullet) – continue to prompt seven
+	•	“No” (active bullet) – input monthly minimum payment of $X on line nine of Form 9465; continue to prompt eight
+
+Prompt 7 – “How much would you like to the Internal Revenue Service towards back taxes on a monthly basis?  Note, this payment amount cannot be less than the minimum monthly payment of $X.”  
+
+      Input user entry on line nine of Form 9465; continue to prompt eight
+
+Prompt 8 – “On what date each month do you want to make your $Y payment to the Internal Revenue Service??
+
+Provide a drop-down list of numbers “1st” through “28th”; continue to prompt              nine
+
+Prompt 9 – 
+
+	•	If user owes $0.00 to $25,000.00 – seamlessly continue to prompt ten
+	•	If user owes $25,001.00 to $50,000.00 – seamlessly continue to prompt eleven
+
+Prompt 10 – “Would you like to allow the Internal Revenue Service to directly withdraw your monthly payment of $Y on the Z day of each month from your bank account?”
+
+	•	“Yes” (active bullet) – request bank account and routing number
+	•	“No” (active bullet) – proceed to prompt twelve
+
+Prompt 11 – “Please provide the account and routing number for the bank account from which you want your monthly payment of $Y on the Z day of each monthly automatically withdrawn.”
+
+      Upon entry of the requested information, proceed to prompt twelve
+
+Prompt 12 – partial preview; request payment; print; provide filing instructions; etc. 
+
+
+IV.	Questions For Thought.
+
+	•	Should we attempt to address situation where CSED < 72 months? SSJ: Yes. Let’s discuss.
+	•	What other “database information” should we gather that is not necessarily vital to prepare Form 9456?
+	•	SSJ:  I tried to go through the IRS’s online streamline installment agreement, but could not since I do not have any information to enter.  
+	•	Do we have anyone we know of that has received a notice or owes taxes that we could use as a “test case” to walk through the IRS’s questionnaire/prompts??  
+	•	Based on what I was able to get through on the IRS website, we should consider whether we should add/incorporate any of the following questions which are on the IRS’s website.  https://sa2.www4.irs.gov/irfof/lang/en/eiaTPstatus.jsp
+	•	My Status
+	•	Confirm your present status by selecting one option:
+	•	I am the taxpayer
+	•	I filed a tax return and have received a notice from the IRS.
+	•	I filed a tax return, owe taxes, and have not received a notice from the IRS.
+	•	My return has been examined and I owe tax.
+	•	I am an authorized Power of Attorney (POA)
+	•	My client filed a tax return and has received a notice from the IRS.
+	•	My client filed a tax return, owes taxes, and has not received a notice from the IRS.
+c.	My client's return has been examined and owes tax
+
