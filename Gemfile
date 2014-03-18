@@ -3,8 +3,10 @@ ruby '2.1.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.3'
+gem 'devise', '~> 3.0.0.rc'
 
 group :development, :test do
+  gem 'rails_layout'
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
 end
@@ -20,6 +22,9 @@ gem 'coffee-rails', '4.0.1'
 gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
+
+gem 'foundation-rails', '~> 5.0.2.0'
+gem 'bootstrap-sass'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
