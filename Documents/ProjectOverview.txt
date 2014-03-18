@@ -1,0 +1,77 @@
+--------------------------------
+Project Overview
+--------------------------------
+Key:
+User - refers to the person using our web application. Can be an individual or a group.
+Process - refers to the process of filling out the Document
+Document - refers to the PDF that is being generated
+# = comment, nothing formal, personal thoughts or guides to delinate sections
+() - similar to a comment but more formal
+* = footnote. Additional footnotes would be met with a *1, *2, etc.
+
+# Excuse the minimal document. It is meant to be easily editable in all platforms, especially the command line for me and rapidly changing.
+
+# I suggest using a #(first letter of your first name) to personalize the 
+  comments in any situations where it would be useful.
+
+--------------------------------
+Target User
+--------------------------------
+Broad Overview:
+ - People who are behind on their taxes.
+
+Intermediate:
+ - (Needs fleshed out furthur)
+
+Specific:
+ - (Needs fleshed out furthur)
+
+# End Target User
+
+--------------------------------
+User Flows
+--------------------------------
+Ideal Flow 1:
+ - User finds the website via search a related term in a search engine - *
+ - User navigates to our website
+ - Our headline copy propels him to do intial signup - *1
+ - His information is captured and stored in the database 
+ - Process is completed
+ - User is eligable to submit the paperwork
+ - User fills out the rest of our information - *2
+ - User purchases filled PDF document via ecommerce platform
+ - Document delivered*3
+
+Strengths:
+ - Everything, this is our white whale, the perfect user. 
+ - We captured the users data and stored it in two seperate tables of the database.
+ - We got payment for the PDF document
+
+Downfalls:
+ - None
+
+ #j - Need to flesh out >=3 User Flows. Also, need to think about negative situations and limiting damage to User experience.
+
+
+* - Need to talk about organic vs paid SEO strategies at a later date
+*1 - Needs to be easy and quick for conversions, while enough info to be valuable.
+*2 -  All additional data we want to collect and store to database. 
+*3 - Could be email, download, etc. Need to determine what is best for privacy.
+
+# End of User Flows
+
+--------------------------------
+Minimal Marketable Feature (MMF) - *
+--------------------------------
+ - User data can be stored
+ - User can register / start process
+ - upon registration Process can be completed
+ - Process can determine if User is eligible
+ - Document can be created
+ - User can pay
+ - Document can be deliverd
+
+ * - The meaning is somewhat obvious from the name but basically it means
+     the absolute minimum product that can be released while still having value to the User.
+
+ # End MMF
